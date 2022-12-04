@@ -4,7 +4,7 @@ public class Main {
 
         Employee[] notes = new Employee[10];
 
-        notes[0] = new Employee("Иван Сергеевич", 205, 3);
+        notes[0] = new Employee("Иван Сергеевич", 210, 3);
         notes[1] = new Employee("Антон Петрович", 500, 4);
         notes[2] = new Employee("Иосиф Александрович", 630, 1);
         notes[3] = new Employee("Петр Антонович", 370, 5);
