@@ -5,12 +5,17 @@ public class EmployeeInformation {
 
 
 
-    public void printEmployees(Employee[] arr) {
+    public static void printEmployees(Employee[] arr) {
+
+        System.out.println("Список всех сотрудников: ");
 
         for (int i = 0; i < Employee.id; i++) {
             System.out.println((arr[i].toString()));
         }
+
+        System.out.println();
     }
+
 
     public static void calculateSalaryExpenses(Employee[] arr) {
 
@@ -22,6 +27,7 @@ public class EmployeeInformation {
         }
 
         System.out.println("Общие расходы на зарплату составляют: " + totalSalary);
+        System.out.println();
 
     }
 
@@ -33,7 +39,7 @@ public class EmployeeInformation {
 
         System.out.println("Сотрудник с минимальной зарплатой: " + arrSorted[0].toString());
 
-
+        System.out.println();
        }
 
     public static void findMaxSalary(Employee[] arr) {
@@ -44,7 +50,7 @@ public class EmployeeInformation {
 
         System.out.println("Сотрудник с максимальной зарплатой: " + arrSorted[(arrSorted.length - 1)].toString());
 
-
+        System.out.println();
     }
 
     public static void calculateAverageSalary(Employee[] arr) {
@@ -57,23 +63,25 @@ public class EmployeeInformation {
         }
 
         System.out.println("Средняя зарплата составляет: " + (totalSalary/Employee.id) );
-
+        System.out.println();
     }
 
     public static void printEmployeeNames(Employee[] arr) {
 
-        System.out.println("Список имён сотрудников: ");
+        System.out.println("Список имён всех сотрудников: ");
 
         for (int i = 0; i < Employee.id; i++) {
 
             System.out.println(arr[i].getName());
         }
 
+        System.out.println();
+
     }
 
     public static void indexSalary(Employee[] arr, int change) {
 
-        System.out.println("Зарплата после индексации:");
+        System.out.println("Зарплата всех сотрудников после индексации на " + change + " процентов :");
 
         for (int i = 0; i < Employee.id; i++) {
 
@@ -81,7 +89,7 @@ public class EmployeeInformation {
             System.out.println(arr[i].toString());
 
         }
-
+        System.out.println();
     }
 
     public static void findDepartmentMinSalary(Employee[] arr, int numberOfDepartment) {
@@ -106,7 +114,7 @@ public class EmployeeInformation {
 
                 System.out.println("В указанном департаменте нет сотрудников");
             }
-
+        System.out.println();
     }
 
     public static void findDepartmentMaxSalary(Employee[] arr, int numberOfDepartment) {
@@ -131,7 +139,7 @@ public class EmployeeInformation {
 
             System.out.println("В указанном департаменте нет сотрудников");
         }
-
+        System.out.println();
     }
 
 
@@ -159,7 +167,7 @@ public class EmployeeInformation {
             System.out.println("Суммарная затрата для отдела " + numberOfDepartment + " равняется " + totalSalary);
         }
 
-
+        System.out.println();
     }
 
 
@@ -187,7 +195,7 @@ public class EmployeeInformation {
             System.out.println("Средняя зарплата для отдела " + numberOfDepartment + " равняется " + totalSalary/employeeFound);
         }
 
-
+        System.out.println();
     }
 
     public static void indexDepartmentEmployeeSalary(Employee[] arr, int numberOfDepartment, int changeSalary) {
@@ -210,7 +218,7 @@ public class EmployeeInformation {
             System.out.println("В указанном департаменте нет сотрудников");
         } else {
 
-            System.out.println("Теперь зарплаты в отделе " + numberOfDepartment + " составляют: ");
+            System.out.println("После индексации на " + changeSalary + " процентов, зарплаты в отделе " + numberOfDepartment + " составляют: ");
 
             for (int i = 0; i < Employee.id; i++) {
 
@@ -222,7 +230,7 @@ public class EmployeeInformation {
 
         }
 
-
+        System.out.println();
     }
 
     public static void printDepartmentEmployeeNameSalary(Employee[] arr, int numberOfDepartment) {
@@ -243,7 +251,7 @@ public class EmployeeInformation {
 
         } else {
 
-            System.out.println("В " + numberOfDepartment + " работают следующие сотрудники: ");
+            System.out.println("В " + numberOfDepartment + " отделе работают следующие сотрудники: ");
 
             for (int i = 0; i < Employee.id; i++) {
 
@@ -254,6 +262,7 @@ public class EmployeeInformation {
                 }
             }
         }
+        System.out.println();
     }
 
     public static void printBySalaryHigher(Employee[] arr, int salary) {
@@ -287,7 +296,7 @@ public class EmployeeInformation {
             }
 
         }
-
+        System.out.println();
     }
 
 
@@ -323,6 +332,7 @@ public class EmployeeInformation {
 
         }
 
+        System.out.println();
     }
 
 
