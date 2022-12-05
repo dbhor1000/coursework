@@ -1,23 +1,24 @@
 public class Employee {
 
-    int salary;
-    String name;
-    int department;
+    private int salary;
+    private final String name;
+    private int department;
+    private final int id;
 
-    static int id = 0;
+    private static int counter = 0;
 
 
 
 
     public Employee(String name, int salary, int department){       //Конструктор для сотрудника с основными характеристиками
+        this.id = counter++;
         this.name = name;
         this.salary = salary;
         this.department = department;
-        id++;
 
     }
 
-    public static int getId() {
+    public int getId() {
         return id;
     }
 
