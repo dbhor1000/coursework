@@ -9,7 +9,7 @@ public class EmployeeInformation {
 
         System.out.println("Список всех сотрудников: ");
 
-        for (int i = 0; i < Employee.id; i++) {
+        for (int i = 0; i < arr.length; i++) {
             System.out.println((arr[i].toString()));
         }
 
@@ -21,7 +21,7 @@ public class EmployeeInformation {
 
         int totalSalary = 0;
 
-        for (int i = 0; i < Employee.id; i++) {
+        for (int i = 0; i < arr.length; i++) {
 
             totalSalary = totalSalary + arr[i].getSalary();
         }
@@ -57,12 +57,12 @@ public class EmployeeInformation {
 
         int totalSalary = 0;
 
-        for (int i = 0; i < Employee.id; i++) {
+        for (int i = 0; i < arr.length; i++) {
 
             totalSalary = totalSalary + arr[i].getSalary();
         }
 
-        System.out.println("Средняя зарплата составляет: " + (totalSalary/Employee.id) );
+        System.out.println("Средняя зарплата составляет: " + (totalSalary/arr.length) );
         System.out.println();
     }
 
@@ -70,7 +70,7 @@ public class EmployeeInformation {
 
         System.out.println("Список имён всех сотрудников: ");
 
-        for (int i = 0; i < Employee.id; i++) {
+        for (int i = 0; i < arr.length; i++) {
 
             System.out.println(arr[i].getName());
         }
@@ -83,7 +83,7 @@ public class EmployeeInformation {
 
         System.out.println("Зарплата всех сотрудников после индексации на " + change + " процентов :");
 
-        for (int i = 0; i < Employee.id; i++) {
+        for (int i = 0; i < arr.length; i++) {
 
             arr[i].setSalary( (arr[i].getSalary() * (100 + change)) / 100 );
             System.out.println(arr[i].toString());
@@ -100,7 +100,7 @@ public class EmployeeInformation {
         int employeeFound = 0;
 
 
-        for (int i = 0; i < Employee.id; i++) {
+        for (int i = 0; i < arr.length; i++) {
 
             if (arrSorted[i].getDepartment() == numberOfDepartment) {
 
@@ -125,7 +125,7 @@ public class EmployeeInformation {
         int employeeFound = 0;
 
 
-        for (int i = 0; i < Employee.id; i++) {
+        for (int i = 0; i < arr.length; i++) {
 
             if (arrSorted[i].getDepartment() == numberOfDepartment) {
 
@@ -149,7 +149,7 @@ public class EmployeeInformation {
         int totalSalary = 0;
 
 
-        for (int i = 0; i < Employee.id; i++) {
+        for (int i = 0; i < arr.length; i++) {
 
             if (arr[i].getDepartment() == numberOfDepartment) {
 
@@ -177,7 +177,7 @@ public class EmployeeInformation {
         int totalSalary = 0;
 
 
-        for (int i = 0; i < Employee.id; i++) {
+        for (int i = 0; i < arr.length; i++) {
 
             if (arr[i].getDepartment() == numberOfDepartment) {
 
@@ -203,7 +203,7 @@ public class EmployeeInformation {
         int employeeFound = 0;
 
 
-        for (int i = 0; i < Employee.id; i++) {
+        for (int i = 0; i < arr.length; i++) {
 
             if (arr[i].getDepartment() == numberOfDepartment) {
 
@@ -220,7 +220,7 @@ public class EmployeeInformation {
 
             System.out.println("После индексации на " + changeSalary + " процентов, зарплаты в отделе " + numberOfDepartment + " составляют: ");
 
-            for (int i = 0; i < Employee.id; i++) {
+            for (int i = 0; i < arr.length; i++) {
 
                 if (arr[i].getDepartment() == numberOfDepartment) {
 
@@ -233,11 +233,12 @@ public class EmployeeInformation {
         System.out.println();
     }
 
+
     public static void printDepartmentEmployeeNameSalary(Employee[] arr, int numberOfDepartment) {
 
         int employeeFound = 0;
 
-        for (int i = 0; i < Employee.id; i++) {
+        for (int i = 0; i < arr.length; i++) {
 
             if (arr[i].getDepartment() == numberOfDepartment) {
 
@@ -253,7 +254,7 @@ public class EmployeeInformation {
 
             System.out.println("В " + numberOfDepartment + " отделе работают следующие сотрудники: ");
 
-            for (int i = 0; i < Employee.id; i++) {
+            for (int i = 0; i < arr.length; i++) {
 
                 if (arr[i].getDepartment() == numberOfDepartment) {
 
@@ -269,7 +270,7 @@ public class EmployeeInformation {
 
         int employeeFound = 0;
 
-        for (int i = 0; i < Employee.id; i++) {
+        for (int i = 0; i < arr.length; i++) {
 
             if (arr[i].getSalary() >= salary ) {
 
@@ -286,7 +287,7 @@ public class EmployeeInformation {
 
             System.out.println("Зарплату выше или равную " + salary + " имеют следующие сотрудники: ");
 
-            for (int i = 0; i < Employee.id; i++) {
+            for (int i = 0; i < arr.length; i++) {
 
                 if (arr[i].getSalary() >= salary ) {
 
@@ -304,7 +305,7 @@ public class EmployeeInformation {
 
         int employeeFound = 0;
 
-        for (int i = 0; i < Employee.id; i++) {
+        for (int i = 0; i < arr.length; i++) {
 
             if (arr[i].getSalary() <= salary ) {
 
@@ -321,7 +322,7 @@ public class EmployeeInformation {
 
             System.out.println("Зарплату ниже или равную " + salary + " имеют следующие сотрудники: ");
 
-            for (int i = 0; i < Employee.id; i++) {
+            for (int i = 0; i < arr.length; i++) {
 
                 if (arr[i].getSalary() <= salary ) {
 
