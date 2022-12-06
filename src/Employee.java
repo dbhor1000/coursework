@@ -10,6 +10,7 @@ public class Employee {
 
 
 
+
     public Employee(String name, int salary, int department){       //Конструктор для сотрудника с основными характеристиками
         this.id = counter++;
         this.name = name;
